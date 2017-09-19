@@ -22,75 +22,84 @@ public class Trabalho extends JFrame{
     public Trabalho(){
         //Objetos
         JPanel P = new JPanel();
-        JPanel P1 = new JPanel();
-        JPanel P2 = new JPanel();
-        JPanel P3 = new JPanel();
-        JPanel P4 = new JPanel();
+        JPanel P01 = new JPanel();
+        JPanel P02 = new JPanel();
+        JPanel P03 = new JPanel();
+        JPanel P04 = new JPanel();
         
-        JButton B1 = new JButton("Botão 1");
-        JButton B2 = new JButton("Botão 2");
-        JButton B3 = new JButton("Botão 3");
-        JButton B4 = new JButton("Botão 4");
-        JButton B5 = new JButton("Botão 5");
-        JButton B6 = new JButton("Botão 6");
-        JButton B7 = new JButton("Botão 7");
-        JButton B8 = new JButton("Botão 8");
-        JButton B9 = new JButton("Botão 9");
-        JButton B10 = new JButton("Botão 10");
+        JButton B01 = new JButton("Botão um");
         
-        JLabel L1 = new JLabel("NORTE ");
-        JLabel L2 = new JLabel("SUL");
-        JLabel L3 = new JLabel("CENTRO");
-        JLabel L4 = new JLabel("LESTE");
-        JLabel L5 = new JLabel("OESTE");
+        JButton B02 = new JButton("Botão dois");
         
-        BorderLayout N = new BorderLayout();
-        BorderLayout S = new BorderLayout();
-        BorderLayout C = new BorderLayout();
-        BorderLayout L = new BorderLayout();
-        BorderLayout O = new BorderLayout();
+        JButton B03 = new JButton("Botão três");
+        
+        JButton B04 = new JButton("Botão quatro");
+        
+        JButton B05 = new JButton("Botão cinco");
+        
+        JButton B06 = new JButton("Botão seis");
+        
+        JButton B07 = new JButton("Botão sete");
+        
+        JButton B08 = new JButton("Botão oito");
+        
+        JButton B09 = new JButton("Botão nove");
+        
+        JButton B10 = new JButton("Botão dez");
+        
+        JLabel L01 = new JLabel("NORTE");
+        JLabel L02 = new JLabel("SUL");
+        JLabel L03 = new JLabel("CENTRO");
+        JLabel L04 = new JLabel("LESTE");
+        JLabel L05 = new JLabel("OESTE");
+        
+        BorderLayout Norte = new BorderLayout();
+        BorderLayout Sul = new BorderLayout();
+        BorderLayout Centro = new BorderLayout();
+        BorderLayout Leste = new BorderLayout();
+        BorderLayout Oeste = new BorderLayout();
         
         //Centralizando as Labels
         
-        L1.setHorizontalAlignment(SwingConstants.CENTER);
-        L2.setHorizontalAlignment(SwingConstants.CENTER);
-        L3.setHorizontalAlignment(SwingConstants.CENTER);
-        L4.setHorizontalAlignment(SwingConstants.CENTER);
-        L5.setHorizontalAlignment(SwingConstants.CENTER);
+        L01.setHorizontalAlignment(SwingConstants.CENTER);
+        L02.setHorizontalAlignment(SwingConstants.CENTER);
+        L03.setHorizontalAlignment(SwingConstants.CENTER);
+        L04.setHorizontalAlignment(SwingConstants.CENTER);
+        L05.setHorizontalAlignment(SwingConstants.CENTER);
         
         //Propriedades
         
-        super.setTitle("TRABALHANDO COM BORDERLAYOUT");
+        super.setTitle("BORDERLAYOUT");
         
-        P.setLayout(N);
+        P.setLayout(Norte);
         add(P,BorderLayout.NORTH);
-        P.add(B1, BorderLayout.NORTH);
-        P.add(B2, BorderLayout.SOUTH);
-        P.add(L1, BorderLayout.CENTER);
+        P.add(B01, BorderLayout.NORTH);
+        P.add(B02, BorderLayout.SOUTH);
+        P.add(L01, BorderLayout.CENTER);
         
-        P1.setLayout(S);
-        add(P1,BorderLayout.SOUTH);
-        P1.add(B3, BorderLayout.NORTH);
-        P1.add(B4, BorderLayout.SOUTH);
-        P1.add(L2, BorderLayout.CENTER);
+        P01.setLayout(Sul);
+        add(P01,BorderLayout.SOUTH);
+        P01.add(B03, BorderLayout.NORTH);
+        P01.add(B04, BorderLayout.SOUTH);
+        P01.add(L02, BorderLayout.CENTER);
         
-        P2.setLayout(C);
-        add(P2,BorderLayout.CENTER);
-        P2.add(B5, BorderLayout.NORTH);
-        P2.add(B6, BorderLayout.SOUTH);
-        P2.add(L3, BorderLayout.CENTER);
+        P02.setLayout(Centro);
+        add(P02,BorderLayout.CENTER);
+        P02.add(B05, BorderLayout.NORTH);
+        P02.add(B06, BorderLayout.SOUTH);
+        P02.add(L03, BorderLayout.CENTER);
         
-        P3.setLayout(L);
-        add(P3,BorderLayout.EAST);
-        P3.add(B7, BorderLayout.NORTH);
-        P3.add(B8, BorderLayout.SOUTH);
-        P3.add(L4, BorderLayout.CENTER);
+        P03.setLayout(Leste);
+        add(P03,BorderLayout.EAST);
+        P03.add(B07, BorderLayout.NORTH);
+        P03.add(B08, BorderLayout.SOUTH);
+        P03.add(L04, BorderLayout.CENTER);
 
-        P4.setLayout(O);
-        add(P4,BorderLayout.WEST);
-        P4.add(B9, BorderLayout.NORTH);
-        P4.add(B10, BorderLayout.SOUTH);
-        P4.add(L5, BorderLayout.CENTER);
+        P04.setLayout(Oeste);
+        add(P04,BorderLayout.WEST);
+        P04.add(B09, BorderLayout.NORTH);
+        P04.add(B10, BorderLayout.SOUTH);
+        P04.add(L05, BorderLayout.CENTER);
     }
     
     public static void main(String[] args) {
